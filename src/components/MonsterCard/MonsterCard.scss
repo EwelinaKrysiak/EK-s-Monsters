@@ -1,0 +1,61 @@
+.cardContainer {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 500px;
+  max-width: 570px;
+
+  h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 3em;
+    background-color: mediumaquamarine;
+    border-radius: 20px;
+    max-width: 570px;
+    margin: 30px auto;
+    padding: 10px 30px;
+  }
+
+  .infoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+
+    p {
+      font-family: "Roboto Thin", sans-serif;
+      font-size: 1.3em;
+      text-align: left;
+      padding: 10px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    img {
+      max-width: 15em;
+
+    }
+  }
+.statsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  background-color: #f0e68c;
+  border-radius: 20px;
+  max-width: 570px;
+
+  .statsData{
+    padding: 0 50px;
+    font-family: "Bungee Hairline", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+  }
+
+
+}
+}
+
+

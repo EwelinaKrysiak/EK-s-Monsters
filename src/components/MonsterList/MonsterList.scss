@@ -1,0 +1,33 @@
+.listContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 30px;
+}
+
+.elImg {
+  max-width: 70px;
+  height: auto;
+  margin: 10px;
+
+  &:hover {
+    animation: img 1s alternate ;
+    cursor: pointer;
+  }
+}
+
+@keyframes img {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 620px) {
+  .listContainer {
+    flex-wrap: wrap;
+  }
+}
