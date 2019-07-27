@@ -1,28 +1,27 @@
 .cardContainer {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 500px;
   max-width: 570px;
+  width: 100%;
 
   h1 {
     font-family: 'Bungee Shade', cursive;
-    font-size: 3em;
+    font-size: 2.5em;
     background-color: mediumaquamarine;
-    border-radius: 20px;
-    max-width: 570px;
-    margin: 30px auto;
-    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 20px auto;
+    padding: 0 30px;
   }
 
-  .infoContainer{
+  .infoContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 50px;
+    max-width: 570px;
 
     p {
       font-family: "Roboto Thin", sans-serif;
@@ -38,24 +37,36 @@
 
     }
   }
-.statsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  background-color: #f0e68c;
-  border-radius: 20px;
-  max-width: 570px;
 
-  .statsData{
-    padding: 0 50px;
-    font-family: "Bungee Hairline", sans-serif;
-    font-size: 1em;
-    text-align: center;
-    color: black;
+  .statsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f0e68c;
+    border-radius: 20px;
+    max-width: 570px;
+    width: 100%;
+
+    .statsData {
+      font-family: "Bungee Hairline", sans-serif;
+      font-size: 1em;
+      text-align: center;
+      color: black;
+      padding-bottom: 10px;
+    }
   }
+}
 
 
+@media (max-width: 620px) {
+  .cardContainer .infoContainer {
+    flex-direction: column;
+    margin: 0 20px;
+    p{
+      text-align: center;
+    }
+  }
 }
-}
+
 
 
