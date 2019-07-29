@@ -57,7 +57,7 @@ class MonstersId extends React.Component {
     }
 
     render() {
-        const {error, isLoaded, data} = this.state
+        const {error, isLoaded, data} = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (!isLoaded) {
@@ -65,7 +65,7 @@ class MonstersId extends React.Component {
         } else {
             return (
                 <>
-                    <div className={'listContainer'}>
+                    <div className='listContainer'>
                         {data.map(data => (<img onClick={() => {
                             this.getMonster(data.slug)
                         }} src={data.images.thumb} alt={data.images.thumb} key={data.name} className={'elImg'}/>))}

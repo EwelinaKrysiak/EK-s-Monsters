@@ -20,23 +20,20 @@ class MonsterCard extends React.Component {
         const frequencyBarWidth = statistics ? statistics.frequency : "";
 
         return (
-            <div className={'cardContainer'}>
+            <div className='cardContainer'>
                 <h1>{name}</h1>
 
-                <div className={'infoContainer'}>
+                <div className='infoContainer'>
                     <img src={images ? images.big : ""} alt=''/>
                     <p>{description}</p>
                 </div>
-                <div className={'statsContainer'}>
+                <div className='statsContainer'>
 
                     <div className='statsData'>Power:
-                        <div style={{border: '1px solid mediumaquamarine', height: '20px', borderRadius: '6px',}}>
+                        <div className='progressBar'>
 
-                            <div style={{
+                            <div className='progressBarValue' style={{
                                 width: powerBarWidth * 100 + '%',
-                                backgroundColor: 'mediumaquamarine',
-                                borderRadius: '5px',
-                                height: '18px'
                             }}>
                             </div>
 
@@ -46,13 +43,10 @@ class MonsterCard extends React.Component {
 
                     </div>
                     <div className='statsData'>Danger:
-                        <div style={{border: '1px solid mediumaquamarine', height: '20px', borderRadius: '6px',}}>
+                        <div className='progressBar'>
 
-                            <div style={{
+                            <div className='progressBarValue' style={{
                                 width: dangerBarWidth * 100 + '%',
-                                backgroundColor: 'mediumaquamarine',
-                                borderRadius: '5px',
-                                height: '18px'
                             }}>
                             </div>
 
@@ -63,13 +57,10 @@ class MonsterCard extends React.Component {
                     </div>
 
                     <div className='statsData'>Frequency:
-                        <div style={{border: '1px solid mediumaquamarine', height: '20px', borderRadius: '6px',}}>
+                        <div className='progressBar'>
 
-                            <div style={{
+                            <div className='progressBarValue' style={{
                                 width: frequencyBarWidth * 100 + '%',
-                                backgroundColor: 'mediumaquamarine',
-                                borderRadius: '5px',
-                                height: '18px'
                             }}>
                             </div>
 

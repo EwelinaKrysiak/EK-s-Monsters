@@ -52,6 +52,20 @@
       text-align: center;
       color: black;
       padding-bottom: 10px;
+
+      .progressBar {
+        border: 1px solid mediumaquamarine;
+        height: 20px;
+        border-radius: 6px;
+
+        .progressBarValue {
+          background-color: mediumaquamarine;
+          border-radius: 5px;
+          height: 20px;
+        }
+
+      }
+
     }
   }
 }
@@ -61,7 +75,8 @@
   .cardContainer .infoContainer {
     flex-direction: column;
     margin: 0 20px;
-    p{
+
+    p {
       text-align: center;
     }
   }
