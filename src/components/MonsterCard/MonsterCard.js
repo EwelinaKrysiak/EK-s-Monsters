@@ -41,7 +41,9 @@ class MonsterCard extends React.Component {
                             </div>
 
                         </div>
+
                         {statistics ? statistics.power : ""}
+
                     </div>
                     <div className='statsData'>Danger:
                         <div style={{border: '1px solid mediumaquamarine', height: '20px', borderRadius: '6px',}}>
@@ -55,7 +57,9 @@ class MonsterCard extends React.Component {
                             </div>
 
                         </div>
+
                         {statistics ? statistics.danger : ""}
+
                     </div>
 
                     <div className='statsData'>Frequency:
@@ -70,6 +74,7 @@ class MonsterCard extends React.Component {
                             </div>
 
                         </div>
+
                         {statistics ? statistics.frequency : ""} </div>
 
                 </div>
