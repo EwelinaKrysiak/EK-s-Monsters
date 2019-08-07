@@ -2,6 +2,7 @@ import React from "react";
 import MonsterCard from "../MonsterCard/MonsterCard";
 import './MonsterList.scss'
 
+const API = 'http://localhost:8080/api/v1/';
 class MonstersId extends React.Component {
     constructor(props) {
         super(props);
@@ -16,7 +17,7 @@ class MonstersId extends React.Component {
     }
 
     getMonsters() {
-        fetch(`http://localhost:8080/api/v1/monsters`)
+        fetch(API+'monsters')
             .then(res => res.json())
             .then(
                 (res) => {
@@ -35,7 +36,7 @@ class MonstersId extends React.Component {
     }
 
     getMonster(slug) {
-        fetch(`http://localhost:8080/api/v1/monster/${slug}`)
+        fetch(API +`monster/${slug}`)
             .then(res => res.json())
             .then(
                 (res) => {
