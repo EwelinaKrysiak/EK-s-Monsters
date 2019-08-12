@@ -1,7 +1,7 @@
 import React from "react";
 import './MonsterCard.scss'
 
-// import StatsData from '../StatsData/StatsData'
+import StatsData from '../StatsData/StatsData'
 
 class MonsterCard extends React.Component {
     constructor(props) {
@@ -36,49 +36,49 @@ class MonsterCard extends React.Component {
                         <p>{description}</p>
                     </div>
 
-                    {/*<StatsData />*/}
+                    <StatsData />
 
-                    <div className='statsContainer'>
-                        <div className='statsData'>Power:
-                            <div className='progressBar'>
+                    {/*<div className='statsContainer'>*/}
+                    {/*    <div className='statsData'>Power:*/}
+                    {/*        <div className='progressBar'>*/}
 
-                                <div className='progressBarValue' style={{
-                                    width: powerBarWidth * 100 + '%',
-                                }}>
-                                </div>
+                    {/*            <div className='progressBarValue' style={{*/}
+                    {/*                width: powerBarWidth * 100 + '%',*/}
+                    {/*            }}>*/}
+                    {/*            </div>*/}
 
-                            </div>
+                    {/*        </div>*/}
 
-                            {statistics ? statistics.power : ""}
+                    {/*        {statistics ? statistics.power : ""}*/}
 
-                        </div>
-                        <div className='statsData'>Danger:
-                            <div className='progressBar'>
+                    {/*    </div>*/}
+                    {/*    <div className='statsData'>Danger:*/}
+                    {/*        <div className='progressBar'>*/}
 
-                                <div className='progressBarValue' style={{
-                                    width: dangerBarWidth * 100 + '%',
-                                }}>
-                                </div>
+                    {/*            <div className='progressBarValue' style={{*/}
+                    {/*                width: dangerBarWidth * 100 + '%',*/}
+                    {/*            }}>*/}
+                    {/*            </div>*/}
 
-                            </div>
+                    {/*        </div>*/}
 
-                            {statistics ? statistics.danger : ""}
+                    {/*        {statistics ? statistics.danger : ""}*/}
 
-                        </div>
+                    {/*    </div>*/}
 
-                        <div className='statsData'>Frequency:
-                            <div className='progressBar'>
+                    {/*    <div className='statsData'>Frequency:*/}
+                    {/*        <div className='progressBar'>*/}
 
-                                <div className='progressBarValue' style={{
-                                    width: frequencyBarWidth * 100 + '%',
-                                }}>
-                                </div>
+                    {/*            <div className='progressBarValue' style={{*/}
+                    {/*                width: frequencyBarWidth * 100 + '%',*/}
+                    {/*            }}>*/}
+                    {/*            </div>*/}
 
-                            </div>
+                    {/*        </div>*/}
 
-                            {statistics ? statistics.frequency : ""} </div>
+                    {/*        {statistics ? statistics.frequency : ""} </div>*/}
 
-                    </div>
+                    {/*</div>*/}
                 </div>
             )
         }

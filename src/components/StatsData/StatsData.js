@@ -19,9 +19,9 @@ class StatsData extends React.Component {
 
         const {statistics} = this.props;
 
-        const powerBarWidth = statistics ? statistics.power : "";
-        const dangerBarWidth = statistics ? statistics.danger : "";
-        const frequencyBarWidth = statistics ? statistics.frequency : "";
+        const powerBarWidth = this.props.statistics ? this.props.statistics.power : "";
+        const dangerBarWidth = this.props.statistics ? this.props.statistics.danger : "";
+        const frequencyBarWidth = this.props.statistics ? this.props.statistics.frequency : "";
 
         return (
             <>
